@@ -6,10 +6,16 @@ Upon publication we will annotate and prepare code for end users.
 NB! Most of the experiments and scripts were run in anaconda environment
 using Ubuntu 22.04. We recommend using this setup.
 
-## 01_qupath_patch_extraction
-This a Groovy script for use with QuPath v. > 0.3 for extraction of training
-or validation/test patches and associated segmentation masks (ground truth
-from annotations).
+## 01_prepare_training_data
+#### split_data.py 
+For the Peso data annotation masks are only provided for the train split. 
+In order to also have a validation split, we split the original training set into a new training and validation split. 
+To do so, we move 12 of the training images and their masks to the new "validation" dir.
+
+#### extract_patches.py 
+After the data has been split, we extract training patches with a given patch size (PS) and microns-per-pixel (MPP) from the WSIs and their masks.
+The patches are saved in new directories.
+
 
 ## 02_train_pixel_wise_segmentation
 train_script.py: This is a training script.
