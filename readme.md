@@ -2,9 +2,6 @@
 
 We provide the code for our prostate gland segmentation algorithm trained on the [PESO dataset](https://www.wouterbulten.nl/posts/peso-dataset-whole-slide-image-prosate-cancer/) used in our publication "Enhancing prostate cancer diagnosis: AI-driven virtual biopsy for optimal MRI-targeted biopsy approach and Gleason grading strategy".
 
-NB! We provide raw working scripts used for the development and implementation.
-Upon publication we will annotate and prepare code for end users.
-
 NB! Most of the experiments and scripts were run in anaconda environment
 using Ubuntu 22.04. We recommend using this setup.
 
