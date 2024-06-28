@@ -1,4 +1,6 @@
-Reference of provided code
+# Prostate Gland Segmentation Algorithm 
+
+We provide the code for our prostate gland segmentation algorithm trained on the [PESO dataset](https://www.wouterbulten.nl/posts/peso-dataset-whole-slide-image-prosate-cancer/) used in our publication "Enhancing prostate cancer diagnosis: AI-driven virtual biopsy for optimal MRI-targeted biopsy approach and Gleason grading strategy".
 
 NB! We provide raw working scripts used for the development and implementation.
 Upon publication we will annotate and prepare code for end users.
@@ -15,7 +17,7 @@ To do so, we move 12 of the training images and their masks to the new "validati
 #### extract_patches.py 
 After the data has been split, we extract training patches with a given patch size (PS) and microns-per-pixel (MPP) from the WSIs and their masks.
 The patches are saved in new directories.
-
+We use [openslide python](https://openslide.org/api/python/) to open the WSIs and extraxt the patches. 
 
 ## 02_train_pixel_wise_segmentation
 train_script.py: This is a training script.

@@ -1,9 +1,6 @@
 from openslide import open_slide
 import os
-from PIL import Image, ImageOps
-import numpy as np 
-import matplotlib.pyplot as plt 
-import argparse
+from PIL import Image
 
 def extract_patches_and_masks(wsi_dir,mask_dir,patch_out_dir,mask_out_dir,final_p_s,final_mpp):
 	"""
