@@ -25,7 +25,3 @@ Albumentations package (v1.3.0) was used for data augmentation.
 ## 03_Patch_level_validation_testing
 This is a Python script for additional validation or test of the trained checkpoints
 using patch-level metrics of segmentation accuracy (Dice score and IoU).
-
-
-
-
